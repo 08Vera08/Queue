@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
 
     public static List<Person> generateClients() {
-        ArrayList<Person> people = new ArrayList<Person>();
+        ArrayList<Person> people = new ArrayList<>();
         people.add(new Person("Pavel", "Kireev", 8));
         people.add(new Person("Vladimir", "Lenin", 8));
         people.add(new Person("Lionel", "Messi", 5));
@@ -15,8 +15,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        ArrayDeque<Person> queue = new ArrayDeque<Person>();
-        ArrayList list = (ArrayList) generateClients();
+        ArrayDeque<Person> queue = new ArrayDeque<>();
+        ArrayList<Person> list = (ArrayList<Person>) generateClients();
         for (int i = 0; i < 5; ++i) {
             ((Person) list.get(i)).show();
             queue.add(((Person) list.get(i)));

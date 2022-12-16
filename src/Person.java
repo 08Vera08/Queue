@@ -2,27 +2,33 @@ import java.util.List;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 
-class Person{
+class Person {
     private String name, lastName;
     private int countOfTickets;
-    public Person(String name, String lastName, int countOfTickets){
+
+    public Person(String name, String lastName, int countOfTickets) {
         this.name = name;
         this.lastName = lastName;
         this.countOfTickets = countOfTickets;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getLastName(){
+
+    public String getLastName() {
         return lastName;
     }
-    public int getCount(){
+
+    public int getCount() {
         return countOfTickets;
     }
-    public void decrease(){
+
+    public void decrease() {
         countOfTickets--;
     }
-    public void show(){
-        System.out.println('[' + name + ", " + lastName + ", "  + countOfTickets + ']');
+
+    public void show() {
+        System.out.println('[' + name + ", " + lastName + ", " + countOfTickets + ']');
     }
 };
